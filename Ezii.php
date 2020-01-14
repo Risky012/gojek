@@ -4,7 +4,7 @@ $headers = array();
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.27.0';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
-$headers[] = 'X-Location: -6.997354,110.433054';
+$headers[] = 'X-Location: -7.794673,110.368945';
 
         echo "\n";
         echo "\e[92m--------------------------------------------------\n";
@@ -83,7 +83,7 @@ echo "\e[91m [×] Gagal Claim Voucer !";
 sleep(5);
 echo "\n";
  echo "\e[96m[!] Mencoba Redeem Voucher 10+10 : GOFOODSANTAI08 \n";
- $data5 = '{"promo_code":"COBAINGOJEK"}';
+ $data5 = '{"promo_code":"JOGJA263"}';
  $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
  $claims2 = json_decode($claim2[0]);
  if($claims2->success == true) 
@@ -193,11 +193,11 @@ function request($url, $token = null, $data = null, $pin = null, $otpsetpin = nu
     $header[] = "Accept: application/json";
     $header[] = "Accept-Language: id-ID";
     $header[] = "Content-Type: application/json; charset=UTF-8";
-    $header[] = "X-AppVersion: 3.30.2";
+    $header[] = "X-AppVersion: 3.34.1";
     $header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
     $header[] = "Connection: keep-alive";
     $header[] = "X-User-Locale: id_ID";
-    $header[] = "X-Location: -6.917464,107.619122";
+    $header[] = "X-Location: -7.794673,110.368945";
     $header[] = "X-Location-Accuracy: 3.0";
     if ($pin):
     $header[] = "pin: $pin";
