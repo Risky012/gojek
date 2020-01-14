@@ -4,7 +4,7 @@ $headers = array();
 $headers[] = 'Content-Type: application/json';
 $headers[] = 'X-AppVersion: 3.27.0';
 $headers[] = "X-Uniqueid: ac94e5d0e7f3f".rand(111,999);
-$headers[] = 'X-Location: -6.405821,106.064193';
+$headers[] = 'X-Location: -6.997354,110.433054';
 
         echo "\n";
         echo "\e[92m--------------------------------------------------\n";
