@@ -49,7 +49,7 @@ $headers[] = 'X-Location: -6.405821,106.064193';
             echo "\e[92m[+] Token Tersimpan di ~> ".$live." \n\n";
                 
 echo "\e[96m[!] Mencoba Reedem Voucher 20+10 : GOFOODSANTAI19 \n";
-$data3 = '{"promo_code":"GOFOODSANTAI19"}';
+$data3 = '{"promo_code":"PAKAIGOJEK01"}';
 $claim = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data3, $headers);
 $claims = json_decode($claim[0]); 
 if($claims->success == true) 
@@ -67,7 +67,7 @@ sleep(5);
 echo "\n";
 
 echo "\e[96m[!] Mencoba Reedem Voucher 15+10 : GOFOODSANTAI11 \n";
-$data4 = '{"promo_code":"GOFOODSANTAI11"}';
+$data4 = '{"promo_code":"COBAGOJEK2020"}';
 $claim1 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data4, $headers);
 $claims1 = json_decode($claim1[0]);
 if($claims1->success == true) 
@@ -83,7 +83,7 @@ echo "\e[91m [×] Gagal Claim Voucer !";
 sleep(5);
 echo "\n";
  echo "\e[96m[!] Mencoba Redeem Voucher 10+10 : GOFOODSANTAI08 \n";
- $data5 = '{"promo_code":"GOFOODSANTAI08"}';
+ $data5 = '{"promo_code":"COBAINGOJEK"}';
  $claim2 = curl('https://api.gojekapi.com/go-promotions/v1/promotions/enrollments', $data5, $headers);
  $claims2 = json_decode($claim2[0]);
  if($claims2->success == true) 
